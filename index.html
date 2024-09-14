@@ -1,0 +1,165 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="side-bar">
+            <nav>
+                <ul>
+                    <li><a class="home" href="#">Home</a></li>
+                    <li><a href="./AboutWeather.html">About</a></li>
+                    <li><a href="./AboutWeather.html">Features</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="search-bar">
+            <div class="search">
+                <input class="city-input" type="text" placeholder="Enter a city name e.g. Tokoyo,Kolkata,New Delhi">
+                <button class="search-btn">Search</button>
+            </div>
+        </div>
+
+        <div class="hero">
+            <div class="weather-input">
+                <p>Weather Forecast</p>
+            </div>
+            <div class="weather-data">
+                <div class="current-weather">
+                    <div class="data">
+                        <h2 id="city">Kolkata,IN</h2>
+
+                        <h1 id="temperature">18 °C</h1>
+                    </div>
+                    <div class="display">
+                        <img id="img" src="./images.png">
+                        <h4 id="clouds">Sunny</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hourly-forecast">
+            <p class="heading">Today's forecast </p>
+            <div class="hour">
+                <div class="day">
+                    <p class="time">6:00 AM</p>
+                    <p class="desc">Sunny</p>
+                    <h3>18 °C</h3>
+                </div>
+                <div class="day">
+                    <p class="time">6:00 AM</p>
+                    <p class="desc">Sunny</p>
+                    <h3>18 °C</h3>
+                </div>
+                <div class="day">
+                    <p class="time">6:00 AM</p>
+                    <p class="desc">Sunny</p>
+                    <h3>18 °C</h3>
+                </div>
+                <div class="day">
+                    <p class="time">6:00 AM</p>
+                    <p class="desc">Sunny</p>
+                    <h3>18 °C</h3>
+                </div>
+                <div class="day">
+                    <p class="time">6:00 AM</p>
+                    <p class="desc">Sunny</p>
+                    <h3>18 °C</h3>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="details-section">
+            <div class="top">
+                <p class="heading">AIR CONDITIONS</p>
+            </div>
+            <div class="detail">
+                <div class="feels-like">
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-person-arms-up" viewBox="0 0 16 16">
+                            <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                            <path
+                                d="m5.93 6.704-.846 8.451a.768.768 0 0 0 1.523.203l.81-4.865a.59.59 0 0 1 1.165 0l.81 4.865a.768.768 0 0 0 1.523-.203l-.845-8.451A1.492 1.492 0 0 1 10.5 5.5L13 2.284a.796.796 0 0 0-1.239-.998L9.634 3.84a.72.72 0 0 1-.33.235c-.23.074-.665.176-1.304.176-.64 0-1.074-.102-1.305-.176a.72.72 0 0 1-.329-.235L4.239 1.286a.796.796 0 0 0-1.24.998l2.5 3.216c.317.316.475.758.43 1.204Z" />
+                        </svg> feels like
+                    <p>
+                    <h4>4 °C</h4>
+                </div>
+                <div class="precipataion">
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-cloud-lightning-rain-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M2.658 11.026a.5.5 0 0 1 .316.632l-.5 1.5a.5.5 0 1 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.316zm9.5 0a.5.5 0 0 1 .316.632l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.316zm-7.5 1.5a.5.5 0 0 1 .316.632l-.5 1.5a.5.5 0 1 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.316zm9.5 0a.5.5 0 0 1 .316.632l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.316zm-7.105-1.25A.5.5 0 0 1 7.5 11h1a.5.5 0 0 1 .474.658l-.28.842H9.5a.5.5 0 0 1 .39.812l-2 2.5a.5.5 0 0 1-.875-.433L7.36 14H6.5a.5.5 0 0 1-.447-.724zm6.352-7.249a5.001 5.001 0 0 0-9.499-1.004A3.5 3.5 0 1 0 3.5 10H13a3 3 0 0 0 .405-5.973" />
+                        </svg> precipation
+                    <p>
+                    <h4>4 °C</h4>
+                </div>
+                <div class="wind">
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-cloud-haze2" viewBox="0 0 16 16">
+                            <path
+                                d="M8.5 3a4.002 4.002 0 0 0-3.8 2.745.5.5 0 1 1-.949-.313 5.002 5.002 0 0 1 9.654.595A3 3 0 0 1 13 12H4.5a.5.5 0 0 1 0-1H13a2 2 0 0 0 .001-4h-.026a.5.5 0 0 1-.5-.445A4 4 0 0 0 8.5 3M0 7.5A.5.5 0 0 1 .5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m2 2a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m-2 4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5" />
+                        </svg> wind
+                    <p>
+                    <h4>4 Km/h</h4>
+                </div>
+                <div class="visibility">
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-droplet-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16a6 6 0 0 0 6-6c0-1.655-1.122-2.904-2.432-4.362C10.254 4.176 8.75 2.503 8 0c0 0-6 5.686-6 10a6 6 0 0 0 6 6M6.646 4.646l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448c.82-1.641 1.717-2.753 2.093-3.13Z" />
+                        </svg> Visibility
+                    <p>
+                    <h4>4 %</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="daily-forecast">
+            <div class="top">
+                <p>7-DAY FORECAST
+                </p>
+            </div>
+            <div class="next">
+                <div class="week">
+                    <p class="date">Sun </p> <img class="week-img" src="./images.png">
+                    <h6>Sunny</h6>
+                    <p class="deg">18 °C</p>
+
+                </div>
+
+                <div class="week">
+                    <p class="date">Sun </p> <img class="week-img" src="./images.png">
+                    <h6>Sunny</h6>
+                    <p class="deg">18 °C</p>
+
+                </div>
+
+                <div class="week">
+                    <p class="date">Sun </p> <img class="week-img" src="./images.png">
+                    <h6>Sunny</h6>
+                    <p class="deg">18 °C</p>
+
+                </div>
+
+                <div class="week">
+                    <p class="date">Sun </p> <img class="week-img" src="./images.png">
+                    <h6>Sunny</h6>
+                    <p class="deg">18 °C</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js" defer></script>
+</body>
+
+</html>

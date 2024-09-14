@@ -1,0 +1,97 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About&Feature</title>
+    <style>
+        .body {
+            margin: 0;
+            padding: 10px;
+            width: 100%;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background: #55648e;
+
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            box-sizing: border-box;
+            border-radius: 30px;
+            margin: 30px;
+            padding: 10px;
+            background: #303644;
+            border: 1px solid #666;
+
+        }
+
+        .data {
+            text-align: center;
+            flex-wrap: wrap;
+        }
+
+        .data h3 {
+            color: #000;
+            margin: 10px;
+            margin-top: 20px;
+            text-decoration: underline;
+        }
+
+        .data p,
+        .data ul {
+            color: #050506;
+            margin: 20px;
+
+        }
+
+        span {
+            font-size: larger;
+        }
+
+        @media screen and (max-width:500px) {
+            .container {
+                font-size: smaller;
+            }
+        }
+
+        @media screen and (max-width:300px) {
+            .container {
+                flex-wrap: wrap;
+                height: fit-content;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="data">
+            <h3>About the Weather Forecasting</h3>
+            <p>Welcome to my weather forecast website, your go-to destination for accurate and up-to-date weather
+                forecasts. Our mission is to provide users with comprehensive and reliable weather information to help
+                them plan their activities, stay prepared for changing weather conditions, and make informed decisions.
+            </p>
+            <hr>
+            <h3>Feature of the website</h3>
+            <p>
+            <ul>
+                <li><span> Weather Data:</span> We fetch the latest weather information from trusted sources to ensure
+                    you receive the most current and accurate updates.</li>
+                <li> <span>Hourly and Daily Forecasts:</span> Plan your day or week with our detailed hourly and 7-day
+                    forecasts, including temperature, precipitation, wind speed, and more.</li>
+                <li><span>Geolocation Support:</span> Allow us to detect your location or search for any city worldwide
+                    to get personalized weather reports.</li>
+                <li><span>Visual Weather Representation:</span> Our website presents weather conditions using clear
+                    visuals, including icons and descriptive details for easy interpretation.</li>
+            </ul>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
